@@ -1,0 +1,9 @@
+
+complex:
+  property:
+  - noOfStudent: 100
+    schoolName: sachin
+  - noOfStudent: 200
+    schoolName: Anand
+      
+      

@@ -1,0 +1,5 @@
+com\sachin\mongodb\mongorepository\repository\UserRepository.class
+com\sachin\mongodb\mongorepository\document\User.class
+com\sachin\mongodb\mongorepository\controller\UserController.class
+com\sachin\mongodb\mongorepository\MongorepositoryApplication.class
+com\sachin\mongodb\mongorepository\Service\UserService.class

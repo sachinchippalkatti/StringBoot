@@ -1,0 +1,5 @@
+com\sachin\mongotempleate\mongotemplateexample\dal\UserDAL.class
+com\sachin\mongotempleate\mongotemplateexample\MongotemplateexampleApplication.class
+com\sachin\mongotempleate\mongotemplateexample\contoller\UserController.class
+com\sachin\mongotempleate\mongotemplateexample\dal\UserDALImp.class
+com\sachin\mongotempleate\mongotemplateexample\document\User.class

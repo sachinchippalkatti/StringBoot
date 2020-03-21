@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.mysql.connection.serviceMysql.repository.UserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 7.111 s <<< FAILURE! - in com.mysql.connection.serviceMysql.repository.UserRepositoryTest
+testAddUser(com.mysql.connection.serviceMysql.repository.UserRepositoryTest)  Time elapsed: 0.111 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testAddUser(UserRepositoryTest.java:32)
+
+testgetUserById(com.mysql.connection.serviceMysql.repository.UserRepositoryTest)  Time elapsed: 0.016 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testgetUserById(UserRepositoryTest.java:40)
+
+testFindByAll(com.mysql.connection.serviceMysql.repository.UserRepositoryTest)  Time elapsed: 0.102 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]> but was:<[0]>
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testFindByAll(UserRepositoryTest.java:56)
+

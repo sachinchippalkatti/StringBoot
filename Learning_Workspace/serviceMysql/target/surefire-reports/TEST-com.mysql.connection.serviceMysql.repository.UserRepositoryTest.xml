@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mysql.connection.serviceMysql.repository.UserRepositoryTest" time="7.111" tests="3" errors="2" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\sachin\Learning_Workspace\serviceMysql\target\test-classes;C:\sachin\Learning_Workspace\serviceMysql\target\classes;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.11.RELEASE\spring-boot-starter-data-jpa-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.11.RELEASE\spring-boot-starter-aop-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-aop\5.1.12.RELEASE\spring-aop-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\aspectj\aspectjweaver\1.9.5\aspectjweaver-1.9.5.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.11.RELEASE\spring-boot-starter-jdbc-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-jdbc\5.1.12.RELEASE\spring-jdbc-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\sc849m\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\sc849m\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\sc849m\.m2\repository\org\hibernate\hibernate-core\5.3.14.Final\hibernate-core-5.3.14.Final.jar;C:\Users\sc849m\.m2\repository\org\jboss\logging\jboss-logging\3.3.3.Final\jboss-logging-3.3.3.Final.jar;C:\Users\sc849m\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\sc849m\.m2\repository\org\javassist\javassist\3.23.2-GA\javassist-3.23.2-GA.jar;C:\Users\sc849m\.m2\repository\net\bytebuddy\byte-buddy\1.9.16\byte-buddy-1.9.16.jar;C:\Users\sc849m\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\sc849m\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\sc849m\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\sc849m\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\sc849m\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\sc849m\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\sc849m\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\sc849m\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\sc849m\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\sc849m\.m2\repository\org\springframework\data\spring-data-jpa\2.1.14.RELEASE\spring-data-jpa-2.1.14.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\data\spring-data-commons\2.1.14.RELEASE\spring-data-commons-2.1.14.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-orm\5.1.12.RELEASE\spring-orm-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-context\5.1.12.RELEASE\spring-context-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-tx\5.1.12.RELEASE\spring-tx-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-beans\5.1.12.RELEASE\spring-beans-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\slf4j\slf4j-api\1.7.29\slf4j-api-1.7.29.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-aspects\5.1.12.RELEASE\spring-aspects-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.11.RELEASE\spring-boot-starter-web-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.11.RELEASE\spring-boot-starter-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot\2.1.11.RELEASE\spring-boot-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.11.RELEASE\spring-boot-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.11.RELEASE\spring-boot-starter-logging-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\sc849m\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\sc849m\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\sc849m\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\sc849m\.m2\repository\org\slf4j\jul-to-slf4j\1.7.29\jul-to-slf4j-1.7.29.jar;C:\Users\sc849m\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\sc849m\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.11.RELEASE\spring-boot-starter-json-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.10.1\jackson-databind-2.9.10.1.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.10\jackson-annotations-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.10\jackson-core-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.10\jackson-datatype-jdk8-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.10\jackson-datatype-jsr310-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.10\jackson-module-parameter-names-2.9.10.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.11.RELEASE\spring-boot-starter-tomcat-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.29\tomcat-embed-core-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.29\tomcat-embed-el-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.29\tomcat-embed-websocket-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-web\5.1.12.RELEASE\spring-web-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-webmvc\5.1.12.RELEASE\spring-webmvc-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-expression\5.1.12.RELEASE\spring-expression-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.1.11.RELEASE\spring-boot-starter-actuator-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.1.11.RELEASE\spring-boot-actuator-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-actuator\2.1.11.RELEASE\spring-boot-actuator-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\io\micrometer\micrometer-core\1.1.9\micrometer-core-1.1.9.jar;C:\Users\sc849m\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.9\HdrHistogram-2.1.9.jar;C:\Users\sc849m\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sc849m\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.11.RELEASE\spring-boot-starter-test-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-test\2.1.11.RELEASE\spring-boot-test-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.11.RELEASE\spring-boot-test-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\sc849m\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\sc849m\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\sc849m\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\sc849m\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\sc849m\.m2\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\Users\sc849m\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\sc849m\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.16\byte-buddy-agent-1.9.16.jar;C:\Users\sc849m\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\sc849m\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sc849m\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\sc849m\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\sc849m\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-core\5.1.12.RELEASE\spring-core-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-jcl\5.1.12.RELEASE\spring-jcl-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-test\5.1.12.RELEASE\spring-test-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\sc849m\AppData\Local\Temp\surefire5546466612790030043\surefirebooter2299238092987767036.jar C:\Users\sc849m\AppData\Local\Temp\surefire5546466612790030043 2020-03-06T23-21-33_990-jvmRun1 surefire6630934585402062752tmp surefire_08122846661488197828tmp"/>
+    <property name="surefire.test.class.path" value="C:\sachin\Learning_Workspace\serviceMysql\target\test-classes;C:\sachin\Learning_Workspace\serviceMysql\target\classes;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.11.RELEASE\spring-boot-starter-data-jpa-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.11.RELEASE\spring-boot-starter-aop-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-aop\5.1.12.RELEASE\spring-aop-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\aspectj\aspectjweaver\1.9.5\aspectjweaver-1.9.5.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.11.RELEASE\spring-boot-starter-jdbc-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-jdbc\5.1.12.RELEASE\spring-jdbc-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\sc849m\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\sc849m\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\sc849m\.m2\repository\org\hibernate\hibernate-core\5.3.14.Final\hibernate-core-5.3.14.Final.jar;C:\Users\sc849m\.m2\repository\org\jboss\logging\jboss-logging\3.3.3.Final\jboss-logging-3.3.3.Final.jar;C:\Users\sc849m\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\sc849m\.m2\repository\org\javassist\javassist\3.23.2-GA\javassist-3.23.2-GA.jar;C:\Users\sc849m\.m2\repository\net\bytebuddy\byte-buddy\1.9.16\byte-buddy-1.9.16.jar;C:\Users\sc849m\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\sc849m\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\sc849m\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\sc849m\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\sc849m\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\sc849m\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\sc849m\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\sc849m\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\sc849m\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\sc849m\.m2\repository\org\springframework\data\spring-data-jpa\2.1.14.RELEASE\spring-data-jpa-2.1.14.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\data\spring-data-commons\2.1.14.RELEASE\spring-data-commons-2.1.14.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-orm\5.1.12.RELEASE\spring-orm-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-context\5.1.12.RELEASE\spring-context-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-tx\5.1.12.RELEASE\spring-tx-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-beans\5.1.12.RELEASE\spring-beans-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\slf4j\slf4j-api\1.7.29\slf4j-api-1.7.29.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-aspects\5.1.12.RELEASE\spring-aspects-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.11.RELEASE\spring-boot-starter-web-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.11.RELEASE\spring-boot-starter-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot\2.1.11.RELEASE\spring-boot-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.11.RELEASE\spring-boot-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.11.RELEASE\spring-boot-starter-logging-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\sc849m\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\sc849m\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\sc849m\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\sc849m\.m2\repository\org\slf4j\jul-to-slf4j\1.7.29\jul-to-slf4j-1.7.29.jar;C:\Users\sc849m\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\sc849m\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.11.RELEASE\spring-boot-starter-json-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.10.1\jackson-databind-2.9.10.1.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.10\jackson-annotations-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.10\jackson-core-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.10\jackson-datatype-jdk8-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.10\jackson-datatype-jsr310-2.9.10.jar;C:\Users\sc849m\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.10\jackson-module-parameter-names-2.9.10.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.11.RELEASE\spring-boot-starter-tomcat-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.29\tomcat-embed-core-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.29\tomcat-embed-el-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.29\tomcat-embed-websocket-9.0.29.jar;C:\Users\sc849m\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-web\5.1.12.RELEASE\spring-web-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-webmvc\5.1.12.RELEASE\spring-webmvc-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-expression\5.1.12.RELEASE\spring-expression-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.1.11.RELEASE\spring-boot-starter-actuator-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.1.11.RELEASE\spring-boot-actuator-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-actuator\2.1.11.RELEASE\spring-boot-actuator-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\io\micrometer\micrometer-core\1.1.9\micrometer-core-1.1.9.jar;C:\Users\sc849m\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.9\HdrHistogram-2.1.9.jar;C:\Users\sc849m\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sc849m\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.11.RELEASE\spring-boot-starter-test-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-test\2.1.11.RELEASE\spring-boot-test-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.11.RELEASE\spring-boot-test-autoconfigure-2.1.11.RELEASE.jar;C:\Users\sc849m\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\sc849m\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\sc849m\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\sc849m\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\sc849m\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\sc849m\.m2\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\Users\sc849m\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\sc849m\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.16\byte-buddy-agent-1.9.16.jar;C:\Users\sc849m\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\sc849m\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sc849m\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\sc849m\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\sc849m\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-core\5.1.12.RELEASE\spring-core-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-jcl\5.1.12.RELEASE\spring-jcl-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\springframework\spring-test\5.1.12.RELEASE\spring-test-5.1.12.RELEASE.jar;C:\Users\sc849m\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sc849m"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/>
+    <property name="basedir" value="C:\sachin\Learning_Workspace\serviceMysql"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\sc849m\AppData\Local\Temp\surefire5546466612790030043\surefirebooter2299238092987767036.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="user.name" value="sc849m"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sc849m\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sc849m\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="user.dir" value="C:\sachin\Learning_Workspace\serviceMysql"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;%;S_TOOLS%;C:\ProgramData\WebEx\WebEx\Applications;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\windows\_SUPPORT\Tools;C:\Program Files\Git\cmd;C:\sachin\Software\apache-maven-3.3.9\bin;C:\Program Files\Python37;C:\Users\sc849m\AppData\Local\Microsoft\WindowsApps;;C:\Users\sc849m\Downloads\sts-4.5.1.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testAddUser" classname="com.mysql.connection.serviceMysql.repository.UserRepositoryTest" time="0.111">
+    <error message="No value present" type="java.util.NoSuchElementException">java.util.NoSuchElementException: No value present
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testAddUser(UserRepositoryTest.java:32)
+</error>
+    <system-out><![CDATA[23:21:35.487 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.497 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:21:35.510 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:21:35.548 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest] from class [org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper]
+23:21:35.572 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest], using SpringBootContextLoader
+23:21:35.577 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]: class path resource [com/mysql/connection/serviceMysql/repository/UserRepositoryTest-context.xml] does not exist
+23:21:35.577 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]: class path resource [com/mysql/connection/serviceMysql/repository/UserRepositoryTestContext.groovy] does not exist
+23:21:35.577 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:21:35.578 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:21:35.681 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.771 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\sachin\Learning_Workspace\serviceMysql\target\classes\com\mysql\connection\serviceMysql\ServiceMysqlApplication.class]
+23:21:35.773 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mysql.connection.serviceMysql.ServiceMysqlApplication for test class com.mysql.connection.serviceMysql.repository.UserRepositoryTest
+23:21:35.775 [main] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]: using defaults.
+23:21:35.776 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:21:35.798 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7e0b85f9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63355449, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9353778, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a28ffa4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48ae9b55, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1700915, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@21de60b4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c267ef4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30ee2816, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@31d7b7bf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@635eaaf1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c30a9b0]
+23:21:35.801 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.802 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.804 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.804 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.805 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.805 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.810 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+23:21:35.810 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.810 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mysql.connection.serviceMysql.repository.UserRepositoryTest]
+23:21:35.965 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.11.RELEASE)
+
+2020-03-06 23:21:36.521  INFO 18212 --- [           main] c.m.c.s.repository.UserRepositoryTest    : Starting UserRepositoryTest on INBLRUBB0058 with PID 18212 (started by sc849m in C:\sachin\Learning_Workspace\serviceMysql)
+2020-03-06 23:21:36.526  INFO 18212 --- [           main] c.m.c.s.repository.UserRepositoryTest    : No active profile set, falling back to default profiles: default
+2020-03-06 23:21:37.321  INFO 18212 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-06 23:21:37.454  INFO 18212 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 2 JPA repository interfaces.
+2020-03-06 23:21:37.513  INFO 18212 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2020-03-06 23:21:38.934  INFO 18212 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2a84b209-7cc0-4729-a812-8324802c8eb8;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-03-06 23:21:39.667  INFO 18212 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-06 23:21:39.742  INFO 18212 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.14.Final}
+2020-03-06 23:21:39.744  INFO 18212 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-06 23:21:39.811  INFO 18212 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-03-06 23:21:40.043  INFO 18212 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: 
+    
+    drop table address_history if exists
+Hibernate: 
+    
+    drop table email if exists
+Hibernate: 
+    
+    drop table four_wheeler if exists
+Hibernate: 
+    
+    drop table phone if exists
+Hibernate: 
+    
+    drop table sports if exists
+Hibernate: 
+    
+    drop table student_mail if exists
+Hibernate: 
+    
+    drop table student_sprots if exists
+Hibernate: 
+    
+    drop table students if exists
+Hibernate: 
+    
+    drop table students_sport_list if exists
+Hibernate: 
+    
+    drop table two_wheeler if exists
+Hibernate: 
+    
+    drop table user if exists
+Hibernate: 
+    
+    drop table vehical if exists
+Hibernate: 
+    
+    drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: 
+    
+    create table address_history (
+       user_ids integer not null,
+        city varchar(255),
+        state varchar(255),
+        street varchar(255),
+        add_id bigint not null,
+        primary key (add_id)
+    )
+Hibernate: 
+    
+    create table email (
+       email_id integer not null,
+        email varchar(255),
+        student_id integer,
+        primary key (email_id)
+    )
+Hibernate: 
+    
+    create table four_wheeler (
+       stering_type varchar(255),
+        id integer not null,
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table phone (
+       id integer not null,
+        num varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table sports (
+       id integer not null,
+        name varchar(255),
+        sports integer,
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table student_mail (
+       student_id integer not null,
+        mail_id integer not null
+    )
+Hibernate: 
+    
+    create table student_sprots (
+       studentid integer not null,
+        sports integer,
+        primary key (studentid)
+    )
+Hibernate: 
+    
+    create table students (
+       id integer not null,
+        address varchar(255),
+        name varchar(255),
+        pid integer,
+        vehical_id integer,
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table students_sport_list (
+       student_id integer not null,
+        sport_list_id integer not null
+    )
+Hibernate: 
+    
+    create table two_wheeler (
+       type varchar(255),
+        id integer not null,
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table user (
+       id integer not null,
+        city varchar(255),
+        state varchar(255),
+        street varchar(255),
+        date date,
+        description clob,
+        last_name varchar(255),
+        first_name varchar(255) not null,
+        office_city varchar(255),
+        office_state varchar(255),
+        office_street varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table vehical (
+       id integer not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    
+    alter table student_mail 
+       add constraint UK_41gpkqthl5s1jco67wbspwcf6 unique (mail_id)
+Hibernate: 
+    
+    alter table address_history 
+       add constraint FK30o1wdsc2us1r80yq4j4t0knn 
+       foreign key (user_ids) 
+       references user
+Hibernate: 
+    
+    alter table email 
+       add constraint FK1d7v8gych49nedicqs0x5orur 
+       foreign key (student_id) 
+       references students
+Hibernate: 
+    
+    alter table four_wheeler 
+       add constraint FKcqqpbiu4wo18cbq1grpc953me 
+       foreign key (id) 
+       references vehical
+Hibernate: 
+    
+    alter table sports 
+       add constraint sportsid_for 
+       foreign key (sports) 
+       references student_sprots
+Hibernate: 
+    
+    alter table student_mail 
+       add constraint FKata249idnsxj86ic71uuevola 
+       foreign key (mail_id) 
+       references email
+Hibernate: 
+    
+    alter table student_mail 
+       add constraint FKdlidocstbh5f6c705wvyw2bdi 
+       foreign key (student_id) 
+       references students
+Hibernate: 
+    
+    alter table student_sprots 
+       add constraint studentid_for 
+       foreign key (studentid) 
+       references students
+Hibernate: 
+    
+    alter table students 
+       add constraint FKda54xkerkmwjhdviv7f9b05q6 
+       foreign key (pid) 
+       references phone
+Hibernate: 
+    
+    alter table students 
+       add constraint FK5hfs8da90ugsvb6hxwoucud2p 
+       foreign key (vehical_id) 
+       references vehical
+Hibernate: 
+    
+    alter table students_sport_list 
+       add constraint FKsivimacoq6i4q1eupkvuxa3cl 
+       foreign key (sport_list_id) 
+       references sports
+Hibernate: 
+    
+    alter table students_sport_list 
+       add constraint FK2cgh4lixb21jjyev9uojdhnu3 
+       foreign key (student_id) 
+       references students
+Hibernate: 
+    
+    alter table two_wheeler 
+       add constraint FKnoktltrdy8v9vpv39n456lm60 
+       foreign key (id) 
+       references vehical
+2020-03-06 23:21:41.074  INFO 18212 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7b18658a'
+2020-03-06 23:21:41.078  INFO 18212 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-06 23:21:41.918  INFO 18212 --- [           main] c.m.c.s.repository.UserRepositoryTest    : Started UserRepositoryTest in 5.951 seconds (JVM running for 7.374)
+2020-03-06 23:21:41.957  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@4c04216f, testMethod = testAddUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@38ac8968]; rollback [true]
+Hibernate: 
+    call next value for hibernate_sequence
+2020-03-06 23:21:42.036  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@4c04216f, testMethod = testAddUser@UserRepositoryTest, testException = java.util.NoSuchElementException: No value present, mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+]]></system-out>
+  </testcase>
+  <testcase name="testgetUserById" classname="com.mysql.connection.serviceMysql.repository.UserRepositoryTest" time="0.016">
+    <error message="No value present" type="java.util.NoSuchElementException">java.util.NoSuchElementException: No value present
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testgetUserById(UserRepositoryTest.java:40)
+</error>
+    <system-out><![CDATA[2020-03-06 23:21:42.057  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@2d4fb0d8, testMethod = testgetUserById@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@38ac8968]; rollback [true]
+Hibernate: 
+    call next value for hibernate_sequence
+2020-03-06 23:21:42.066  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@2d4fb0d8, testMethod = testgetUserById@UserRepositoryTest, testException = java.util.NoSuchElementException: No value present, mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByAll" classname="com.mysql.connection.serviceMysql.repository.UserRepositoryTest" time="0.102">
+    <failure message="expected:&lt;[2]&gt; but was:&lt;[0]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[2]> but was:<[0]>
+	at com.mysql.connection.serviceMysql.repository.UserRepositoryTest.testFindByAll(UserRepositoryTest.java:56)
+]]></failure>
+    <system-out><![CDATA[2020-03-06 23:21:42.071  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@78479f2b, testMethod = testFindByAll@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@38ac8968]; rollback [true]
+Hibernate: 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2020-03-06 23:21:42.170  INFO 18212 --- [           main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@c33b74f testClass = UserRepositoryTest, testInstance = com.mysql.connection.serviceMysql.repository.UserRepositoryTest@78479f2b, testMethod = testFindByAll@UserRepositoryTest, testException = org.junit.ComparisonFailure: expected:<[2]> but was:<[0]>, mergedContextConfiguration = [MergedContextConfiguration@130161f7 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.mysql.connection.serviceMysql.ServiceMysqlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2c767a52 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@797badd3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@221af3c0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7cdca29f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@176d53b2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4f11ca69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36f0f1be], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+]]></system-out>
+  </testcase>
+</testsuite>
